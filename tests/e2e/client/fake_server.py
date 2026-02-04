@@ -9,7 +9,7 @@ from mimesis import Generic
 
 from .fake_base_client import FakeBaseClient
 
-from backend.modules.servers.schema.common import ServerInfo
+from src.modules.servers.schema.common import ServerInfo
 
 
 class FakeServer(FakeBaseClient):

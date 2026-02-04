@@ -36,7 +36,7 @@ dependencies = [
 [tool.pytest.ini_options]
 addopts = "-v"
 testpaths = ["tests"]
-pythonpath = [".", "backend/"]
+pythonpath = [".", "src/"]
 python_files = ["test_*.py", "*_test.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]

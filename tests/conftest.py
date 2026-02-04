@@ -2,7 +2,7 @@ from fastapi.testclient import TestClient
 import pytest
 from cryptography.hazmat.primitives.asymmetric import rsa
 
-from backend.app.fastapi import app
+from src.app.fastapi import app
 
 @pytest.fixture
 def fastapi_client():
