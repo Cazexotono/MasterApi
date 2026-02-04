@@ -1,5 +1,5 @@
-from pydantic import BaseModel,PostgresDsn, MySQLDsn, AnyUrl, Field
-from typing import Union, Optional
+from pydantic import BaseModel,PostgresDsn, Field
+from typing import Optional
 
 
 class DatabaseSettings(BaseModel):

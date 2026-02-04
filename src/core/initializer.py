@@ -29,7 +29,7 @@ logger_app.propagate = False
 # Settings
 project = ProjectSchema()
 settings = ApiSettings()
-secret = SecretSettings()
+secret = SecretSettings() # type: ignore
 
 match settings.environment:
     case Environment.dev:
