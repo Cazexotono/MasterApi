@@ -9,7 +9,7 @@ REST API for monitoring [SkyMP](https://github.com/skyrim-multiplayer/skymp) ser
 - Redis
 
 #### Quick start
-Initialize a local copy of the repository
+Initialize a local copy of the repository:
 ```
 git clone https://github.com/Cazexotono/MasterApi.git
 cd MasterApi
@@ -27,7 +27,13 @@ Configure connections to PostgreSQL and Redis. To do this, create a .env file in
 API__DATABASE__DB_URL=postgresql+asyncpg://user:password@localhost:5432/dbname
 API__REDIS__CACHE_URL=redis://localhost:6379/0
 ```
-The database is migrated using a alembic.
+The database is migrated using a alembic:
 ```
 uv run alembic upgrade head
 ```
+Run masterApi:
+```
+cd src
+uv run main.py
+```
+If the launch is successful, you can proceed to the endpoint http://127.0.0.1:8000/docs for further work with the API.
